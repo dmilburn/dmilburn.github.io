@@ -44,20 +44,19 @@ a {
 	color: #a19ee5;
 }
 
-#Contact_Info a:hover {
-	background-color: #b2b0ff;
-	color: #2d2c40;
-}
+
 
 #Contact_Info a:visited {
 	background-color: #59587f;
 	color: #a19ee5;
 }
 
-.nav_bar a:hover {
+#Contact_Info a:hover {
 	background-color: #b2b0ff;
 	color: #2d2c40;
 }
+
+
 
 .nav_bar a:link {
 	background-color: #59587f;
@@ -68,6 +67,12 @@ a {
 	background-color: #59587f;
 	color: #a19ee5;
 }
+
+.nav_bar a:hover {
+	background-color: #b2b0ff;
+	color: #2d2c40;
+}
+
 .projects a:link{
 	background-color: #a19ee5;
 	color: #2d2c40;
