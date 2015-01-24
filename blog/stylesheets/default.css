@@ -1,0 +1,65 @@
+* {
+	background-color: #a19ee5;
+	color: #2d2c40;
+	font-family: 'Ovo', serif; 
+
+}
+
+title {
+	display: none;
+}
+
+#name {
+	font-size: 2.6em;
+	top: 0em;
+	position: fixed;
+}
+
+#sites {
+	position: fixed;
+	margin-top: -.5em;
+	top: 3em;
+}
+
+.nav_bar {
+	border: .25em solid #59587f;
+	background-color: #59587f;
+	height: 1.5em;
+	width: 110%;
+	color: #a19ee5;
+	display: inline-block;
+	margin-left: -.5em;
+	margin-right: -.5em;
+	font-size: 2em;
+}
+
+
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+	background-color: #59587f;
+	color: #a19ee5;
+}
+
+a:hover {
+	background-color: #b2b0ff;
+	color: #2d2c40;
+}
+
+#Contact_Info {
+	border-top: .25em solid #59587f;
+	bottom: 0;
+	position: fixed;
+	width: 110%;
+	background-color: #59587f;
+	margin-left: -.5em;
+	margin-right: -.5em;
+}
+
+.newline {
+	display: block;
+}
+
