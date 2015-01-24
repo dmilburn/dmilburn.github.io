@@ -2,7 +2,6 @@
 	background-color: #a19ee5;
 	color: #2d2c40;
 	font-family: 'Ovo', serif; 
-	font-size: 1em;
 
 }
 
@@ -12,20 +11,28 @@ title {
 
 #name {
 	font-size: 2.6em;
+	top: 0em;
+	position: fixed;
+}
+
+#sites {
+	position: fixed;
+	margin-top: -.5em;
+	top: 3em;
 }
 
 .nav_bar {
-	font-size: 2em;
 	border: .25em solid #59587f;
 	background-color: #59587f;
 	height: 1.5em;
 	width: 110%;
 	color: #a19ee5;
 	display: inline-block;
-	margin-top: -.5em;
 	margin-left: -.5em;
 	margin-right: -.5em;
+	font-size: 2em;
 }
+
 
 
 a {
@@ -42,8 +49,23 @@ a:hover {
 	color: #2d2c40;
 }
 
-.project a:link{
+.projects a:link{
+	background-color: #a19ee5;
+	color: #2d2c40;
+}
 
+.projects a:hover{
+	background-color: #59587f;
+	color: #a19ee5;
+}
+
+.projects {
+	display: inline-block;
+	font-size: 1.5em;
+	border: .2em solid #59587f;
+	height: 1.5em;
+	width: 4em;
+	text-align: center;
 }
 
 #Contact_Info {
@@ -60,4 +82,12 @@ a:hover {
 	display: block;
 }
  
+#Sample {
+	font-size: 1.75em;
+	margin-top: 3em;
+}
 
+ul {
+	font-size: 1.5em;
+	margin-top: 10em;
+}

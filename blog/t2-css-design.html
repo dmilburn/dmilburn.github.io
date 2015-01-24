@@ -3,40 +3,51 @@
   <title>Inline, Block and Inline-Block</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="../blog/stylesheets/blog-stylesheet.css"/>
-
+  <link href='http://fonts.googleapis.com/css?family=Ovo' rel='stylesheet' type='text/css'>
 </head>
-
-<body>
-
-  <h1> What does it mean to display “inline” vs. “inline-block”? </h1>
+    
+  <body>
+    <div class = "nav_bar" id = "name"> <a href = "#">Debbie Milburn </a></div>
+    <div class = "nav_bar" id = "sites"> <a href  = "#"> Projects</a> | <a href = "#"> About</a> | <a href  = "#"> Contact</a> | <a href = "#"> Blog</a></span></div>
+  <h1> What does it mean to change an object's display to "block", “inline” and “inline-block”? </h1>
+  <h2>Condiments are delicious</h2>
   <h4>1/21/2015</h4>
 
   <section>
-    <p>HTML and CSS are programming languages used in designing websites. HTML is what you use to display the content of the website and CSS is what you use to change the formatting, color and everything involved in making websites pretty.</p>
     <p> One element involved in CSS formatting is changing the "display" property.  Display effects how an object is displayed on the screen. Here is the correct CSS syntax for using “display”: </p>
-    <p><code>.awesome_possum { </p>
+    <p><code>.condiments { </p>
       <p>display: block;</p>
       <p>}</code></p>
     <p>In the above code, you can see the word "block" after "display". “Block” is one of many different display properties that one can use in designing websites. Today I will explain the differences between "block", “inline” and “inline-block” displays.</p>
-    <p>For my explanations, I will manipulate the code and images seen here:</p>
-    <h3>Inline Objects</h3>
-    <p>Objects that are "inline" move to be in a horizontal line with each other. An object that is "inline" cannot have a defined height or width. The object will become just big enough to hold its contents and the developer cannot directly affect its size. In the example below,.....</p>
-
-    <p>You can move inline objects vertically by changing their top and bottom margins, but their right and left margins cannot be changed so you cannot move them side to side. In the example below,.....</p>
 
     <h3>Block Objects</h3>
-    <p>When an object is displayed as a "block", all of its "physical" measurements are changeable; you can change its size (height, width) and its location in space(margins). Another feature of blocks is that they automatically have a line break between them and the next object. In the example below,......</p>
+    <p>When an object is displayed as a block, all of its "physical" measurements are changeable; you can change its size (height, width) and its location in space(margins). In the example below, there are 3 objects with block display: Mustard, Ketchup and Relish. Using "width" and "height" I was able to specify an exact size for each condiment. </p>
 
+    <p>By default, block objects stack themselves in a verticle line, like Mustard and Ketchup in the example below. Relish has been moved down and to the right using margin-top and margin-left.</p>
+
+    <img src="../blog/img/block.png">
+   
+    <h3>Inline Objects</h3>
+    <p>One makes objects inline in order to display them in a horizontal line. Inline objects do not have physical properties in the same way that block objects do. An inline object cannot have a defined height or width; it will become just big enough to hold its contents. In terms of location, inline objects cannot be moved vertically, only horizontally. In the below example, all of the code is exactly the same as the first example, except that it has been set to display: inline; instead of display: block;. Without changing anything else, the condiments have all become a smaller size and moved into a horizontal line. </p>
+    <img src="../blog/img/inline.png" >
 
     <h3>Inline-Block Objects</h3>
-    <p>As the name suggests, objects defined as inline-block have features similar to both inline objects and block objects. Like blocks, inline-blocks can also have "physical" attributes; you can set the height and width of inline blocks. Like inline objects, objects that are inline-blocks move to be in a horizontal line with each other. Also similarly to inline objects, you cannot adjust the right and left margins of inline-blocks, only the top and bottom margins; therefore, you can only directly move inline-blocks up and down, not left and right. In the example below,......</p>
+    <p>As the name suggests, objects defined as inline-block have features similar to both inline objects and block objects. Like blocks, inline-blocks can also have "physical" attributes; you can set the height and width. Like inline objects, objects that are inline-blocks move to be in a horizontal line with each other. Also similarly to inline objects, you can move objects horizontally but there are limitation on the vertical movement. In the below example, each of the condiments are different sizes and can be found in a horizontal line.</p>
+
+    <img src="../blog/img/inline-block.png" >
 
     <h3>Additional Helpful Resources</h3>
-    <ol>
-      <li>
-      <li>
-      <li>
-    </ol>
+    <ul>
+      <li> <a href = "http://www.w3schools.com/cssref/pr_class_display.asp" > W3School CSS display </a> </li>
+      <li> <a href = "http://designshack.net/articles/css/whats-the-deal-with-display-inline-block/" > What’s the Deal With Display: Inline-Block? by Joshua Johnson </a> </li>
+      <li> <a href = "http://www.amazon.com/HTML-CSS-Design-Build-Websites/dp/1118008189" > HTML & CSS by Jon Duckett </a> </li>
+    </ul>
+
+    <div class = "extra_space"></div>
+
+    <div id="Contact_Info"> <a href = "#" >  Deborah.A.Milburn@gmail.com | </a><a href = "#" >  LinkedIn  | </a> <a href = "#" > Twitter </a></div>
+
+
 
   </section>
 </body>
