@@ -59,6 +59,10 @@ a {
 	color: #a19ee5;
 }
 
+.nav_bar a:visited {
+	background-color: #59587f;
+	color: #a19ee5;
+}
 .projects a:link{
 	background-color: #a19ee5;
 	color: #2d2c40;
