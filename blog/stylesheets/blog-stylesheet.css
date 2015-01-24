@@ -116,3 +116,7 @@ h3 {
 li {
 	margin-left: 6em;
 }
+
+.bold {
+	font-weight: bold;
+}
