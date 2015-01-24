@@ -49,6 +49,11 @@ a {
 	color: #2d2c40;
 }
 
+#Contact_Info a:visited {
+	background-color: #59587f;
+	color: #a19ee5;
+}
+
 .nav_bar a:hover {
 	background-color: #b2b0ff;
 	color: #2d2c40;

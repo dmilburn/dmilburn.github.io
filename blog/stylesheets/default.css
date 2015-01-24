@@ -34,19 +34,38 @@ title {
 }
 
 
-
 a {
 	text-decoration: none;
 }
 
-a:link {
+#Contact_Info a:link {
 	background-color: #59587f;
 	color: #a19ee5;
 }
 
-a:hover {
+#Contact_Info a:hover {
 	background-color: #b2b0ff;
 	color: #2d2c40;
+}
+
+#Contact_Info a:visited {
+	background-color: #59587f;
+	color: #a19ee5;
+}
+
+.nav_bar a:hover {
+	background-color: #b2b0ff;
+	color: #2d2c40;
+}
+
+.nav_bar a:link {
+	background-color: #59587f;
+	color: #a19ee5;
+}
+
+.nav_bar a:visited {
+	background-color: #59587f;
+	color: #a19ee5;
 }
 
 #Contact_Info {
