@@ -34,40 +34,43 @@ title {
 }
 
 
-a {
-	text-decoration: none;
-}
 
 #Contact_Info a:link {
 	background-color: #59587f;
 	color: #a19ee5;
+	text-decoration: none;
 }
 
 
 #Contact_Info a:visited {
 	background-color: #59587f;
 	color: #a19ee5;
+	text-decoration: none;
 }
 
 #Contact_Info a:hover {
 	background-color: #b2b0ff;
 	color: #2d2c40;
+	text-decoration: none;
 
 }
 
 .nav_bar a:link {
 	background-color: #59587f;
 	color: #a19ee5;
+	text-decoration: none;
 }
 
 .nav_bar a:visited {
 	background-color: #59587f;
 	color: #a19ee5;
+	text-decoration: none;
 }
 
 .nav_bar a:hover {
 	background-color: #b2b0ff;
 	color: #2d2c40;
+	text-decoration: none;
 }
 
 h1 {
@@ -124,4 +127,7 @@ li {
 .code {
 	font-family: monospace;
 	background-color: gray;
+	padding-color: gray;
+	margin-left: 100px;
+	margin-right: 100px;
 }
