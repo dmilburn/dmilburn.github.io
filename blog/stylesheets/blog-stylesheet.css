@@ -120,3 +120,7 @@ li {
 .bold {
 	font-weight: bold;
 }
+
+.code {
+	font-family: monospace;
+}
