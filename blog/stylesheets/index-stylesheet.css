@@ -52,6 +52,12 @@ a {
 	text-decoration: none;
 }
 
+#Contact_Info a:hover {
+	background-color: #965882;
+	color: #091B21;
+	text-decoration: none;
+}
+}
 
 
 
@@ -67,7 +73,7 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
+.nav_bar a:hover {
 	background-color: #965882;
 	color: #091B21;
 	text-decoration: none;
@@ -80,6 +86,13 @@ a:hover {
 .projects a:visited{
 	background-color: #C7AFBC;
 	color: #091B21;
+}
+
+.projects a:hover{
+	background-color: #965882;
+	color: #091B21;
+	text-decoration: none;
+
 }
 
 .projects {

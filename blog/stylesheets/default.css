@@ -51,11 +51,12 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
+#Contact_Info a:hover {
 	background-color: #965882;
 	color: #091B21;
 	text-decoration: none;
 }
+
 
 
 
@@ -71,6 +72,11 @@ a:hover {
 	text-decoration: none;
 }
 
+.nav_bar a:hover {
+	background-color: #965882;
+	color: #091B21;
+	text-decoration: none;
+}
 
 
 #Contact_Info {
