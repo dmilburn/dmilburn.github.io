@@ -89,14 +89,14 @@ a {
 
 .projects a:hover{
 	background-color: #1E6882;
-	color: #091B21;
+	color: #C7AFBC;
 }
 
 .projects {
 	display: inline-block;
 	font-size: 1.5em;
 	border: .2em solid #59587f;
-	height: 1.5em;
+	height: 1.25em;
 	width: 4em;
 	text-align: center;
 }
