@@ -79,13 +79,17 @@ a {
 }
 
 .projects a:link{
-	background-color: #a19ee5;
-	color: #2d2c40;
+	background-color: #C7AFBC;
+	color: #091B21;
+}
+.projects a:visited{
+	background-color: #C7AFBC;
+	color: #091B21;
 }
 
 .projects a:hover{
-	background-color: #59587f;
-	color: #a19ee5;
+	background-color: #1E6882;
+	color: #091B21;
 }
 
 .projects {
