@@ -32,6 +32,9 @@ title {
 	font-size: 2em;
 }
 
+a {
+	text-decoration: none;
+}
 
 #Contact_Info a:link {
 	background-color: #1E6882;
