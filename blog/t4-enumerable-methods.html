@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+  <title>Cycle</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../blog/stylesheets/blog-stylesheet.css"/>
+  <link href='http://fonts.googleapis.com/css?family=Ovo' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+  <div class = "nav_bar" id = "name"> <a href = "http://dmilburn.github.io/index.html">Debbie Milburn </a></div>
+    <div class = "nav_bar" id = "sites"> <a href  = "http://dmilburn.github.io/projects/index.html"> Projects</a> | <a href = "http://dmilburn.github.io/about.html"> About</a> | <a href  = "http://dmilburn.github.io/contact.html"> Contact</a> | <a href = "http://dmilburn.github.io/blog/index.html"> Blog</a></span></div>
+
+  <h1>Cycle</h1>
+  <h2>An enumerable method</h2>
+  <h4>2/3/15</h4>
+
+  <section>
+    <p>The enumerable module contains many methods that can be applied to collections, i.e. arrays and hashes. One of these methods is called <span class = "code">cycle</span>. The syntax for cycle is:</p>
+    <p class = "code">collection.cycle(n){|loc_var| block}</p>
+    <p>When you call <span class = "code">cycle</span> on a collection, the collection is cycled through n number of times. Whatever is in the block is applied to each item of the list as its cycled through. </p>
+    <h3>Examples</h3>
+    <p>I'm pretty hungry, so let's create an array called "food" and fill it with different kinds of food:</p>
+    <p class = "code">food = ["pasta", "pizza", "cheese"]</p>
+    <p>If we wanted to print this list twice, we would write:</p>
+    <p class = "code">food.cycle(2){|bite| puts bite}</p>
+    <p>which would result in:</p>
+    <p class = "code">pasta</p>
+    <p class = "code">pizza</p>
+    <p class = "code">cheese</p>
+    <p class = "code">pasta</p>
+    <p class = "code">pizza</p>
+    <p class = "code">cheese</p>
+    <p>Say we wanted to print each of these words twice in each line. We would write:<p>
+    <p class = "code">food.cycle(2){|bite| puts bite*2}</p>
+    <p>which would result in:</p>
+    <p class = "code">pastapasta</p>
+    <p class = "code">pizzapizza</p>
+    <p class = "code">cheesecheese</p>
+    <p class = "code">pastapasta</p>
+    <p class = "code">pizzapizza</p>
+    <p class = "code">cheesecheese</p>
+    <p>Notice that the fourth line is "pizzapizza", not "pizzapizzapizzapizza". This method is non-destructive; the changes made to the items are not made to the original collection. The items from the original collection are cycled through each time. If this method were destructive, we would have in the fourth line "pizzapizza"*2 or "pizzapizzapizzapizza".</p>
+    <h3>(Notes)</h3>
+    <p>Here are some things to keep in mind about n:
+    <ul>
+      <li>If the integer entered is 0 or a negative number, nothing happens.</li> 
+      <li>If a float is entered, the float will be rounded down to the nearest integer and the collection will be cycled through that amount of times.</li>
+      <li>If nothing is entered, the collection will be cycled through infinitely.</li> </p>
+    </ul>
+    <h3>Additional Resources</h3>
+    <ul>
+      <li><a href "http://apidock.com/ruby/Enumerable/cycle">API Dock on Cycles</a></li>
+      <li><a href "http://www.sitepoint.com/guide-ruby-collections-iii-enumerable-enumerator/">Robert Qualls on Enumerables</a></li>
+    </ul>
+
+    <div class = "extra_space"></div>
+    
+    <div id="Contact_Info"> <a href = "#" >  Deborah.A.Milburn@gmail.com</a> | <a href = "https://www.linkedin.com/pub/debbie-milburn/9a/580/242" >  LinkedIn </a> | <a href = "https://twitter.com/DebbieMilburn2" > Twitter </a></div>
+
+
+  </section>
+  
+</body>
+
