@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+  <title>Ruby Classes</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../blog/stylesheets/blog-stylesheet.css"/>
+  <link href='http://fonts.googleapis.com/css?family=Ovo' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+  <div class = "nav_bar" id = "name"> <a href = "http://dmilburn.github.io/index.html">Debbie Milburn </a></div>
+    <div class = "nav_bar" id = "sites"> <a href  = "http://dmilburn.github.io/projects/index.html"> Projects</a> | <a href = "http://dmilburn.github.io/about.html"> About</a> | <a href  = "http://dmilburn.github.io/contact.html"> Contact</a> | <a href = "http://dmilburn.github.io/blog/index.html"> Blog</a></span></div>
+
+  <h1> Ruby Classes </h1>
+  <h2> </h2>
+  <h4> 2/13/15</h4>
+
+  <section>
+    <p>Humans love to classify things. We like to be able to point to a whole bunch of different stuff that has some things in common and call it by one word. Take dogs for example. <a href = "https://www.akc.org/dog-breeds/groups/all/">There are many breeds of dogs in the world.</a> These breeds have many differences such as temperament, color, and size. However, because these breeds have certain attributes in common, such as four legs, wet noses and being adorable, there is a word in English to classify them all: “dog”.</p>
+    <p>Humans also love to classify things in computer programming. This is where “class” in Ruby comes in. Creating a class in Ruby is an easy solution for creating several objects with similar attributes.</p>
+    <p>For example, let’s create a Dog class in Ruby:</p>
+    <p class = "code">class Dog</p>
+    <p class = "code">end</p>
+
+    <p>Now that we’ve created a Dog class, we can create a new Dog like so:</p>
+    <p class = "code">shih_tzu = Dog.new</p>
+    <p>To set inherent values to our Dog as soon as we’ve created it, we must enter values into the “initiate” method in our Dog class.  These attributes will be assigned to all objects who are in class Dog. So let's make all of our dogs have 4 legs, wet noses and adorable like so:</p>
+    <p class = "code">class Dog</p>
+    <p class = "code">def initiate</p>
+    <p class = "code">legs = 4</p>
+    <p class = "code">nose = “wet”</p>
+    <p class = "code">adorable? = true</p>
+    <p class = "code">end</p>
+    <p class = "code">end</p>
+    <p>Now anytime we create a new dog, they will automatically have the attributes mentioned above.</p>
+    <p>But what about things that we want all dogs to have but need to be a little different? Like their names? One of the ways to solve this is to create a "name" variable and set it as an argument when we're defining initiate: </p>
+    <p class = "code">class Dog</p>
+    <p class = "code">def initiate(name)</p>
+    <p class = "code">legs = 4</p>
+    <p class = "code">nose = “wet”</p>
+    <p class = "code">adorable? = true</p>
+    <p class = "code">end</p>
+    <p class = "code">end</p>
+    <p>We can now enter a name as an argument when we create a new dog object:</p>
+    <p class = "code">dalmatian = Dog.new(“Stephen”)</p>
+    <p>And we now have a dalmatian named Stephen. We’re living the dream.</p>
+    <p>On top of the attributes we assign to things in a class, we also can think of classes in terms of what we do to them. There are things that we can do to dogs like walk them, praise them, and <a href = "http://store.americanapparel.net/lemon-lime-dragon-dogzilla-xxs-m-_f900ll">dress them up like dragons.</a> This is where methods come in.  Methods inside of class definitions are the things we can do to our objects and/or dogs.</p>
+    <p>Let’s make a praise method for our class that says “Good boy” and then the name of our dog. In order to use the name we entered earlier, we’ll need to make the name available to our whole class by making it into an “instance variable”. Instance variables start with an @ symbol and are available for use within the whole class, not just within the current method.</p>
+    <p class = "code">class Dog</p>
+    <p class = "code">def initiate(name)</p>
+    <p class = "code">@name = name</p>
+    <p class = "code">legs = 4</p>
+    <p class = "code">nose = “wet”</p>
+    <p class = "code">adorable? = true</p>
+    <p class = "code">end</p>
+    <p class = "code">def praise</p>
+    <p class = "code">puts “Good boy, #{@name}!”</p>
+    <p class = "code">end</p>
+    <p class = "code">end</p>
+    <p>We can call our praise method on our dog Stephen by entering:</p>
+    <p class = "code">dalmatian.praise</p>
+    <p>which would result in:</p>
+    <p class = "code">Good boy, Stephen!</p>
+    <p>Thank you for reading this post! I hope it helped to clear up some things on classes.</p>
+
+    <div class = "extra_space"></div>
+    
+    <div id="Contact_Info"> <a href = "#" >  Deborah.A.Milburn@gmail.com</a> | <a href = "https://www.linkedin.com/pub/debbie-milburn/9a/580/242" >  LinkedIn </a> | <a href = "https://twitter.com/DebbieMilburn2" > Twitter </a></div>
+
+
+  </section>
+  
+</body>
+
