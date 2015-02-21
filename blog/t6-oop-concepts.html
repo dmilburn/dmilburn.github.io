@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+  <title>Composition vs. Inheritance</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../blog/stylesheets/blog-stylesheet.css"/>
+  <link href='http://fonts.googleapis.com/css?family=Ovo' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+  <div class = "nav_bar" id = "name"> <a href = "http://dmilburn.github.io/index.html">Debbie Milburn </a></div>
+  <div class = "nav_bar" id = "sites"> <a href  = "http://dmilburn.github.io/projects/index.html"> Projects</a> | <a href = "http://dmilburn.github.io/about.html"> About</a> | <a href  = "http://dmilburn.github.io/contact.html"> Contact</a> | <a href = "http://dmilburn.github.io/blog/index.html"> Blog</a></span></div>
+
+  <h1> Composition vs. Inheritance </h1>
+  <h2>Quadrilaterals Vs. Beethoven</h2>
+  <h4>2/20/15</h4>
+
+  <section>
+    <p>One piece of sage advice that has been repeated a lot at DBC is "Don't Repeat Yourself(DRY)!" You can employ many different strategies to make your code more DRY. Two strategies that can help are employing inheritance or composition. While both of these strategies are about minimizing code, they have slightly different applications.</p>
+    <h3>Inheritance</h3>
+    <p>Inheritance has similarities with some basic math concepts. 
+    <p>An object with 4 sides is called a quadrilateral. Calling something a quadrilateral does not imply anything about the length of the sides or the angles between the sides, only that there are 4.</p>
+    <p>If we want specific info about length or angles, there are more specific names for different kinds of quadrilaterals such as: parallelograms (which have two sets of parallel sides) and trapezoids(which have one set of parallel sides). Since parallelograms and trapezoids both have 4 sides, they are both different kinds of quadrilaterals.</p>
+    <p>We are also taught about more specific kinds of parallelograms: rectangles (which have 4 90 degree angles) and rhombuses (which have 4 equal sides). Since rectangles and rhombuses have 2 sets of parallel sides, they are parallelograms. And since they both have 4 sides, they are also quadrilaterals.
+    </p>
+    <p>In coding, inheritance can be thought of as "subclass IS A superclass". You can mark this in your code by writing in your class definition:</p>
+    <p class = "code">class Subclass < Superclass</p>
+    <p>If you were to create a class "Quadrilateral", you could assign it to have 4 sides. If you were to create a subclass of "Quadrilateral" called "Paralellogram", you could assign that to have 2 sets of parallel sides and it would automatically have 4 sides.</p>
+    <p class = "code">class Quadrilateral</p>
+    <p class = "code">attr_reader :sides</p>
+    <p class = "code">def sides</p>
+    <p class = "code">@sides = 4</p>
+    <p class = "code">end</p>
+    <p class = "code">end</p>
+    <p class = "code">class Parallelogram < Quadrilateral</p>
+    <p class = "code">def initialize = 2</p>
+    <p class = "code">sets_of_parallel_sides = 2</p>
+    <p class = "code">end</p>
+    <p class = "code">end</p>
+    <p>If you were to create a new parallelogram and ask it how many sides it has:</p>
+    <p class = "code"> parallelogram = Parallelogram.new </p>
+    <p class = "code">puts parallelogram.sides </p>
+    <p>it would print 4.</p>
+
+    <h3>Composition</h3>
+    <p>A composition is something that is greater than the sum of its parts. 
+
+    <p>Music is composed. A piece of music is really a collection of different notes. Yet, when all of these notes come together, they create something <a href = "https://www.youtube.com/watch?v=AUZS3zGLQQE&index=5&list=PLe7EGNFYzuaF7JieoEEUDIdt2R1WDW1Z2">singular and beautiful</a>.(Admittedly, I have trouble believing this with <a href = "https://www.youtube.com/watch?v=CTn0Y016atE">pointilism.</a>)
+    </p>
+    <p>In coding, composition can be thought of as "class HAS A different class". If you were to create a "Song" class, you would also need a "Note" class. </p>
+    <p>The first two bars of <a href = "https://www.youtube.com/watch?v=7cuNkiLHGL0"> Beethoven's 5th symphony</a> only has two different notes, G and Eflat.</p>
+    <img src = "http://www.edforall.net/courses/169/FuenfteDeckblatt.png" style = "width:50%;height:50%">
+    <p>If we were to try and recreate these bars using "Song" and "Note" classes, we would need these classes to be able to communicate. More specifically, "Song" needs to be able to get and use different instances of "Note". "attr_reader" is invaluable in this communication so that "Song" can invoke different methods inside of "Note".
+    <p class = "code">class Song</p>
+    <p class = "code">def initialize</p>
+    <p class = "code">end</p>
+    <p class = "code">def add_pitch(*pitches)</p>
+    <p class = "code">@array = pitches</p>
+    <p class = "code">end</p>
+    <p class = "code">def play</p>
+    <p class = "code">puts @array.join("-") + "!"</p>
+    <p class = "code">end</p>
+    <p class = "code">end</p>
+    <p class = "code">class Note</p>
+    <p class = "code">attr_reader :pitch</p>
+    <p class = "code">def initialize(pitch)</p>
+    <p class = "code">@pitch = pitch</p>
+    <p class = "code">end</p>
+    <p class = "code">def pitch</p>
+    <p class = "code">@pitch</p>
+    <p class = "code">end</p>
+    <p class = "code">end</p>
+
+    <p>If we were to add the notes to the first two bars of Beethoven's fifth:
+    <p class = "code">g = Note.new("G")</p>
+    <p class = "code">eflat = Note.new("EFlat")
+</p>
+    <p class = "code">beethoven_5 = Song.new</p>
+    <p class = "code">beethoven_5.add_pitch(g.pitch, g.pitch, g.pitch, eflat.pitch)
+</p>
+    <p class = "code">beethoven_5.play</p>
+    <p>it would result in: G-G-G-EFlat!</p>
+    <h3>Summary</h3>
+    <p>Think of inheritance as "subclass IS A superclass" and composition as "class HAS A different class". Use inheritance when you want to create something that is a subset of something you already created. Sandy Metz advises to only use inheritance when you feel pretty certain there won't be big changes. Use composition when you want a class to be able to have and use multiple instances of a different class.</p>
+
+    <div class = "extra_space"></div>
+    
+    <div id="footer"> <a href = "#" >  Deborah.A.Milburn@gmail.com</a> | <a href = "https://www.linkedin.com/pub/debbie-milburn/9a/580/242" >  LinkedIn </a> | <a href = "https://twitter.com/DebbieMilburn2" > Twitter </a></div>
+
+
+  </section>
+  
+</body>
+

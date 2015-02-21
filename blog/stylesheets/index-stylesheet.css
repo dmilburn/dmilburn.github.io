@@ -10,26 +10,31 @@ title {
 }
 
 #name {
+	position: fixed;
 	font-size: 2.6em;
 	top: 0em;
-	position: fixed;
+	
 }
 
 #sites {
 	position: fixed;
+	font-size: 2em;
+	top: 3em;	
 	margin-top: -.5em;
-	top: 3em;
+
 }
 
 .nav_bar {
 	border: .25em solid #1E6882;
 	background-color: #1E6882;
+	border-left: .4em solid #1E6882;
+	border-left: .4em solid #1E6882;
 	height: 1.5em;
 	width: 110%;
-	display: inline-block;
+	display: block;
 	margin-left: -.5em;
 	margin-right: -.5em;
-	font-size: 2em;
+
 }
 
 
@@ -38,7 +43,7 @@ a {
 	text-decoration: none;
 }
 
-#Contact_Info a:link {
+#footer a:link {
 	background-color: #1E6882;
 	color: #C7AFBC;
 	text-decoration: none;
@@ -46,13 +51,13 @@ a {
 
 
 
-#Contact_Info a:visited {
+#footer a:visited {
 	background-color: #1E6882;
 	color: #C7AFBC;
 	text-decoration: none;
 }
 
-#Contact_Info a:hover {
+#footer a:hover {
 	background-color: #965882;
 	color: #091B21;
 	text-decoration: none;
@@ -104,9 +109,10 @@ a {
 	text-align: center;
 }
 
-#Contact_Info {
+#footer {
 	border-top: .25em solid #1E6882;
 	bottom: 0;
+	border-left: .4em solid #1E6882;
 	position: fixed;
 	width: 110%;
 	background-color: #1E6882;
