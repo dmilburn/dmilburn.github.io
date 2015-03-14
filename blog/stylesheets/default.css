@@ -10,26 +10,24 @@ title {
 }
 
 #name {
-	font-size: 2.6em;
-	top: 0em;
-	position: fixed;
+	font-size: 1.5em;
+	
 }
 
-#sites {
-	position: fixed;
-	margin-top: -.5em;
-	top: 3em;
-}
 
 .nav_bar {
 	border: .25em solid #1E6882;
 	background-color: #1E6882;
 	height: 1.5em;
-	width: 110%;
-	display: inline-block;
+	width: 100%;
+	display: block;
 	margin-left: -.5em;
 	margin-right: -.5em;
+	text-align: center;
+	top: 0em;
+	position: fixed;
 	font-size: 2em;
+
 }
 
 
