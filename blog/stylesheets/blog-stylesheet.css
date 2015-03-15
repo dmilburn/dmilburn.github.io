@@ -1,8 +1,22 @@
 * {
-	background-color: #C7AFBC;
-	color: #091B21;
+	color: black;
 	font-family: 'Ovo', serif; 
 
+}
+
+#wordblock {
+	background-color: white;
+	opacity: 0.8;
+  filter: alpha(opacity=80);
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+body {
+	background: url("http://d13pix9kaak6wt.cloudfront.net/background/peterwashington_1343671564_44.jpg") ;
+	background-color: black;
+	background-size: 100%;
+	background-repeat: no-repeat;
 }
 
 title {
@@ -16,8 +30,6 @@ title {
 
 
 .nav_bar {
-	border: .25em solid #1E6882;
-	background-color: #1E6882;
 	height: 1.5em;
 	width: 100%;
 	display: block;
@@ -27,18 +39,22 @@ title {
 	top: 0em;
 	position: fixed;
 	font-size: 2em;
+	background-color: black;
+	z-index: 1;
+	border: solid black .5em;
+	border-bottom: solid black 1.5em;
 
 }
 
 
 .nav_bar a:link {
-	background-color: #1E6882;
+	background-color: black;
 	color: #C7AFBC;
 	text-decoration: none;
 }
 
 .nav_bar a:visited {
-	background-color: #1E6882;
+	background-color: black;
 	color: #C7AFBC;
 	text-decoration: none;
 }
@@ -51,7 +67,7 @@ title {
 
 h1 {
   text-align: center;
-  margin-top: 4em;
+  margin-top: 3.5em;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -67,8 +83,8 @@ h4 {
 }
 
 p {
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 1em;
+  margin-right: 1em;
 
 }
 
@@ -82,12 +98,14 @@ h3 {
 
 
 #footer {
+	background-color: black;
 	bottom: 0;
 	position: fixed;
 	width: 100%;
 	margin-left: -.5em;
 	margin-right: -.5em;
 	text-align: center;
+	border-top: solid black .2em;
 }
 
 .extra_space {
@@ -99,9 +117,6 @@ li {
 	margin-right: 6em;
 }
 
-.bold {
-	font-weight: bold;
-}
 
 .code {
 	font-family: monospace;
