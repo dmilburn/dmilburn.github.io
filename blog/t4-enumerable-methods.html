@@ -18,30 +18,30 @@
   <h4>2/3/15</h4>
 
   <section>
-    <p>The enumerable module contains many methods that can be applied to collections, i.e. arrays and hashes. One of these methods is called <span class = "code">cycle</span>. The syntax for cycle is:</p>
+    <p>The enumerable module contains many methods that can be applied to collections, i.e. arrays and hashes. One of these methods is called cycle. The syntax for cycle is:</p>
     <p class = "code">collection.cycle(n){|loc_var| block}</p>
-    <p>When you call <span class = "code">cycle</span> on a collection, the collection is cycled through n number of times. Whatever is in the block is applied to each item of the list as its cycled through. </p>
+    <p>When you call cycle on a collection, the collection is cycled through n number of times. Whatever is in the block is applied to each item of the list as its cycled through. </p>
     <h3>Examples</h3>
     <p>I'm pretty hungry, so let's create an array called "food" and fill it with different kinds of food:</p>
     <p class = "code">food = ["pasta", "pizza", "cheese"]</p>
     <p>If we wanted to print this list twice, we would write:</p>
     <p class = "code">food.cycle(2){|bite| puts bite}</p>
     <p>which would result in:</p>
-    <p class = "code">pasta</p>
-    <p class = "code">pizza</p>
-    <p class = "code">cheese</p>
-    <p class = "code">pasta</p>
-    <p class = "code">pizza</p>
-    <p class = "code">cheese</p>
+    <pre><p class = "code">pasta
+pizza
+cheese
+pasta
+pizza
+cheese</p></pre>
     <p>Say we wanted to print each of these words twice in each line. We would write:<p>
     <p class = "code">food.cycle(2){|bite| puts bite*2}</p>
     <p>which would result in:</p>
-    <p class = "code">pastapasta</p>
-    <p class = "code">pizzapizza</p>
-    <p class = "code">cheesecheese</p>
-    <p class = "code">pastapasta</p>
-    <p class = "code">pizzapizza</p>
-    <p class = "code">cheesecheese</p>
+    <pre><p class = "code">pastapasta
+pizzapizza
+cheesecheese
+pastapasta
+pizzapizza
+cheesecheese</p></pre>
     <p>Notice that the fourth line is "pizzapizza", not "pizzapizzapizzapizza". This method is non-destructive; the changes made to the items are not made to the original collection. The items from the original collection are cycled through each time. If this method were destructive, we would have in the fourth line "pizzapizza"*2 or "pizzapizzapizzapizza".</p>
     <h3>(Notes)</h3>
     <p>Here are some things to keep in mind about n:

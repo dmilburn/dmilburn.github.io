@@ -21,40 +21,40 @@
 
     <h3>Arrays</h3>
     <p>Arrays are organizational systems that are helpful for when you want your information to be retrievable based a numbered list. The syntax for writing an array is:</p>
-    <div class = "code"><p class = "code">array = [“item0”, “item1”, “item2”, “item3”]</p></div>
+    <p class = "code">array = [“item0”, “item1”, “item2”, “item3”]</p>
     <p>I am the youngest of four sisters. A standard thing that happens when people get to know me is they learn the names of my older sisters. Factoring in our bith order, the names of me and my sisters is information stored well in an array.</p>
     <p>Here's an array with the names of me and my sisters stored in birth order:</p>
-    <div class = "code"><p class = "code">milburn_sisters = [“Rebecca”, “Eleanor”, “Sarah”, “Debbie”]</p></div>
+    <p class = "code">milburn_sisters = [“Rebecca”, “Eleanor”, “Sarah”, “Debbie”]</p>
     <p>In order to access information in an array, you type:</p>
-      <div class = "code"><p class = "code">array_name[#]</p></div>
+      <p class = "code">array_name[#]</p>
     <p>with the corresponding number of the data you want where "#" is. An important thing to remember when accessing arrays is that the first piece of data stored is data number 0, NOT data number 1. So, if you wanted to find out the name of my oldest sister, you would type:</p>
-    <div class = "code"><p class = "code">puts milburn_sisters[0]</p></div>
+    <p class = "code">puts milburn_sisters[0]</p>
     <p>which would result in:</p>
-    <div class = "code"><p class = "code">Rebecca</p></div>
+    <p class = "code">Rebecca</p>
 
 
     <h3>Hashes</h3>
     <p>Hashes are organizational systems that are helpful for when you don't need your information stored in a specific order. The syntax for writing a hash is:</p>
-    <div class = "code"><p class = "code">hash = {</p>
-        <p class = "code">“key1” => “value1”,</p>
-        <p class = "code">“key2” => “value2”,</p>
-        <p class = "code">“key3” => “value3”,</p>
-        <p class = "code">“key4” => “value4”</p>
-        <p class = "code">}</p></div>
+    <pre><p class = "code">hash = {
+      “key1” => “value1”,
+      “key2” => “value2”,
+      “key3” => “value3”,
+      “key4” => “value4”
+}</p></pre>
     <p>A dictionary is an example of an organizational system that does not require your information to be retrieved in a specific order. (I know dictionaries are usually in alphabetical order, but hear me out.) If you were to look up "<a href = "https://www.youtube.com/watch?v=DOcyzddfvvM">Aardvark</a>" in the dictionary, likely the only thing that would be important to you is the <a href = "http://dictionary.reference.com/browse/aardvark">definition</a>, NOT that Aardvark is the first word in the dictionary.</p>
     <p>Hashes are usesful for this reason; they allow you to access information by their keywords, instead of by their place in a line.</p>
     <p>Here's a hash dictionary involving the computer programming vocab in this blog post:</p>
-    <div class = "code"><p class = "code">vocab = {</p>
-    <p class = "code">"hash" => "A data retrieval system, not ordered”,</p>
-    <p class = "code">"array" => "A data retrieval system, ordered",</p>
-    <p class = "code">"ruby" => "A programming language",</p>
-    <p class = "code">}</p></div>
+    <pre><p class = "code">vocab = {
+      "hash" => "A data retrieval system, not ordered”,
+      "array" => "A data retrieval system, ordered",
+      "ruby" => "A programming language",
+}</p></pre>
     <p>In order to access information in a hash, you type:</p>
-    <div class = "code"><p class = "code">hash_name["key"]</p></div>
+    <p class = "code">hash_name["key"]</p>
     <p>with the word before the => where "key" is. So, if you wanted to find out what ruby is, you would type:</p>
-    <div class = "code"><p class = "code">puts vocab["ruby"]</p></div>
+    <p class = "code">puts vocab["ruby"]</p>
     <p>which would result in:</p>
-    <div class = "code"><p class = "code">A programming language</p></div>
+    <p class = "code">A programming language</p>
 
 
     <p>I hope this was helpful in understanding the differences between Hashes and Arrays and when to use them.</p>

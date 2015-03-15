@@ -1,11 +1,11 @@
 * {
-	color: black;
+	color: #170116;
 	font-family: 'Ovo', serif; 
 
 }
 
 #wordblock {
-	background-color: white;
+	background-color: WhiteSmoke;
 	opacity: 0.8;
   filter: alpha(opacity=80);
   margin-left: 1em;
@@ -13,10 +13,11 @@
 }
 
 body {
-	background: url("http://d13pix9kaak6wt.cloudfront.net/background/peterwashington_1343671564_44.jpg") ;
+	background: url("http://d13pix9kaak6wt.cloudfront.net/background/peterwashington_1343671564_44.jpg") fixed;
 	background-color: black;
 	background-size: 100%;
 	background-repeat: no-repeat;
+
 }
 
 title {
@@ -43,6 +44,7 @@ title {
 	z-index: 1;
 	border: solid black .5em;
 	border-bottom: solid black 1.5em;
+	color: black;
 
 }
 
@@ -61,7 +63,7 @@ title {
 
 .nav_bar a:hover {
 	background-color: #965882;
-	color: #091B21;
+	color: #170116;
 	text-decoration: none;
 }
 
@@ -93,7 +95,7 @@ p {
 }
 
 h3 {
-	margin-left: 100px;
+	margin-left: 1.2em;
 }
 
 
@@ -120,7 +122,8 @@ li {
 
 .code {
 	font-family: monospace;
-	background-color: gray;
-	padding-color: gray;
-
+	margin-left: 1em;
+	margin-right: 1em;
+	background-color: #965882;
 }
+

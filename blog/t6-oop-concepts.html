@@ -28,21 +28,21 @@
     <p>In coding, inheritance can be thought of as "subclass IS A superclass". You can mark this in your code by writing in your class definition:</p>
     <p class = "code">class Subclass < Superclass</p>
     <p>If you were to create a class "Quadrilateral", you could assign it to have 4 sides. If you were to create a subclass of "Quadrilateral" called "Paralellogram", you could assign that to have 2 sets of parallel sides and it would automatically have 4 sides.</p>
-    <pre><p class = "code">class Quadrilateral</p></pre>
-    <pre><p class = "code"> attr_reader :sides</p></pre>
-    <pre><p class = "code"> def sides</p></pre>
-    <pre><p class = "code">   @sides = 4</p></pre>
-    <pre><p class = "code"> end</p></pre>
-    <pre><p class = "code">end</p></pre>
-    <pre><p class = "code">class Parallelogram < Quadrilateral</p></pre>
-    <pre><p class = "code"> def initialize = 2</p></pre>
-    <pre><p class = "code">   sets_of_parallel_sides = 2</p></pre>
-    <pre><p class = "code"> end</p></pre>
-    <pre><p class = "code">end</p></pre></pre>
-    <pre><p>If you were to create a new parallelogram and ask it how many sides it has:</p></pre>
-    <pre><p class = "code">parallelogram = Parallelogram.new </p></pre>
-    <pre><p class = "code">puts parallelogram.sides </p></pre>
-    <pre><p>it would print 4.</p></pre>
+    <pre><p class = "code">class Quadrilateral
+    attr_reader :sides
+    def sides
+        @sides = 4
+    end
+end
+class Parallelogram < Quadrilateral
+    def initialize = 2
+      sets_of_parallel_sides = 2
+    end
+end</p></pre>
+    <p>If you were to create a new parallelogram and ask it how many sides it has:</p>
+    <pre><p class = "code">parallelogram = Parallelogram.new 
+puts parallelogram.sides </p></pre>
+    <<p>it would print 4.</p>
 
     <h3>Composition</h3>
     <p>A composition is something that is greater than the sum of its parts. 
@@ -53,34 +53,32 @@
     <p>The first two bars of <a href = "https://www.youtube.com/watch?v=7cuNkiLHGL0"> Beethoven's 5th symphony</a> only has two different notes, G and Eflat.</p>
     <img src = "http://www.edforall.net/courses/169/FuenfteDeckblatt.png" style = "width:50%;height:50%">
     <p>If we were to try and recreate these bars using "Song" and "Note" classes, we would need these classes to be able to communicate. More specifically, "Song" needs to be able to get and use different instances of "Note". "attr_reader" is invaluable in this communication so that "Song" can invoke different methods inside of "Note".
-    <pre><p class = "code">class Song</p></pre>
-    <pre><p class = "code"> def initialize</p></pre>
-    <pre><p class = "code"> end</p></pre>
-    <pre><p class = "code"> def add_pitch(*pitches)</p></pre>
-    <pre><p class = "code">   @array = pitches</p></pre>
-    <pre><p class = "code"> end</p></pre>
-    <pre><p class = "code"> def play</p></pre>
-    <pre><p class = "code">   puts @array.join("-") + "!"</p></pre>
-    <pre><p class = "code"> end</p></pre>
-    <pre><p class = "code">end</p></pre>
-    <pre><p class = "code">class Note</p></pre>
-    <pre><p class = "code"> attr_reader :pitch</p></pre>
-    <pre><p class = "code"> def initialize(pitch)</p></pre>
-    <pre><p class = "code">   @pitch = pitch</p></pre>
-    <pre><p class = "code"> end</p></pre>
-    <pre><p class = "code"> def pitch</p></pre>
-    <pre><p class = "code">   @pitch</p></pre>
-    <pre><p class = "code"> end</p></pre>
-    <pre><p class = "code">end</p></pre>
+    <pre><p class = "code">class Song
+    def initialize
+    end
+    def add_pitch(*pitches)
+        @array = pitches
+    end
+    def play
+        puts @array.join("-") + "!"
+    end
+end
+class Note
+    attr_reader :pitch
+    def initialize(pitch)
+        @pitch = pitch
+    end
+    def pitch
+        @pitch
+    end
+end</p></pre>
 
     <p>If we were to add the notes to the first two bars of Beethoven's fifth:
-    <p class = "code">g = Note.new("G")</p>
-    <p class = "code">eflat = Note.new("EFlat")
-</p>
-    <p class = "code">beethoven_5 = Song.new</p>
-    <p class = "code">beethoven_5.add_pitch(g.pitch, g.pitch, g.pitch, eflat.pitch)
-</p>
-    <p class = "code">beethoven_5.play</p>
+    <pre><p class = "code">g = Note.new("G")
+eflat = Note.new("EFlat")
+beethoven_5 = Song.new
+beethoven_5.add_pitch(g.pitch, g.pitch, g.pitch, eflat.pitch)
+beethoven_5.play</p></pre>
     <p>it would result in: G-G-G-EFlat!</p>
     <h3>Summary</h3>
     <p>Think of inheritance as "subclass IS A superclass" and composition as "class HAS A different class". Use inheritance when you want to create something that is a subset of something you already created. Sandy Metz advises to only use inheritance when you feel pretty certain there won't be big changes. Use composition when you want a class to be able to have and use multiple instances of a different class.</p>
