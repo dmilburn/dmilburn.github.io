@@ -1,16 +1,47 @@
+/*header*/
 .container .header {
-    background-color: SteelBlue;
+    background-color: #22343B;
     border-color: grey;
-
+    font-size: 1.4em;
 }
 
-
+#name {
+  font-size: 1.6em;
+}
+/*footer*/
 .container .footer {
-    background-color: SteelBlue;
+    background-color: #22343B;
     border-color: grey;
 
 }
 
+/*header and footer*/
+
+.navbar-default .navbar-nav li a:hover {
+  color: ivory;
+}
+
+.container li a:visited {
+  color: ivory;
+}
+
+.container li a:link {
+  color: ivory;
+}
+
+.container li a:hover, a:focus {
+  color: none;
+  background-color: blue;
+}
+
+.navbar-nav{
+  float:none;
+  margin: 0 auto;
+  display: table;
+  table-layout: fixed;
+}
+
+/*body*/
 
 body {
   background-color: ivory;
