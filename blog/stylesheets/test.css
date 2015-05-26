@@ -1,0 +1,19 @@
+.container .header {
+    background-color: black;
+
+}
+
+
+.container .footer {
+    background-color: black;
+
+}
+
+body {
+  background-color: grey;
+}
+
+.content {
+  margin-top: 5em;
+}
+
