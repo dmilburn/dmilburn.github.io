@@ -1,19 +1,25 @@
 .container .header {
-    background-color: black;
+    background-color: SteelBlue;
+    border-color: grey;
 
 }
 
 
 .container .footer {
-    background-color: black;
+    background-color: SteelBlue;
+    border-color: grey;
 
 }
 
+
 body {
-  background-color: grey;
+  background-color: ivory;
 }
 
 .content {
   margin-top: 5em;
 }
 
+* {
+  font-family: 'Ovo', serif; 
+}
