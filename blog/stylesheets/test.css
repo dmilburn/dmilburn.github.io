@@ -8,27 +8,44 @@
 #name {
   font-size: 1.7em;
 }
-/*footer*/
-.container .footer {
-    background-color: Gainesboro;
-    border-color: grey;
-    font-size: 1.7em;
-}
 
-/*header and footer*/
-
-.navbar-default .navbar-nav li a:hover {
+.navbar-default .header .navbar-nav li a:hover {
   color: black;
   background-color: LightGray;
 }
 
-.container li a:visited {
+.container .header li a:visited {
   color: black;
 }
 
-.container li a:link {
+.container .header li a:link {
   color: black;
 }
+
+
+/*footer*/
+.container .footer {
+    font-size: 1.7em;
+    background-color: ivory;
+    border-color: ivory;
+}
+
+.navbar-default .footer .navbar-nav li a:hover {
+  color: black;
+}
+
+.container .footer li a:visited {
+  color: #337ab7;
+}
+
+.container .footer li a:link {
+  color: #337ab7;
+}
+
+
+
+
+
 
 /*center header and footer*/ 
 .navbar-nav{
