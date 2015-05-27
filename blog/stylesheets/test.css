@@ -1,39 +1,36 @@
 /*header*/
 .container .header {
-    background-color: #22343B;
+    background-color: Gainesboro;
     border-color: grey;
-    font-size: 1.4em;
+    font-size: 1.5em;
 }
 
 #name {
-  font-size: 1.6em;
+  font-size: 1.7em;
 }
 /*footer*/
 .container .footer {
-    background-color: #22343B;
+    background-color: Gainesboro;
     border-color: grey;
-
+    font-size: 1.7em;
 }
 
 /*header and footer*/
 
 .navbar-default .navbar-nav li a:hover {
-  color: ivory;
+  color: black;
+  background-color: grey;
 }
 
 .container li a:visited {
-  color: ivory;
+  color: black;
 }
 
 .container li a:link {
-  color: ivory;
+  color: black;
 }
 
-.container li a:hover, a:focus {
-  color: none;
-  background-color: blue;
-}
-
+/*center header and footer*/ 
 .navbar-nav{
   float:none;
   margin: 0 auto;
@@ -49,6 +46,12 @@ body {
 
 .content {
   margin-top: 5em;
+}
+
+.content .contact {
+  margin-top: 3.5em;
+  font-size: 5.2em;
+  text-align: center;
 }
 
 * {
