@@ -71,6 +71,10 @@ body {
   text-align: center;
 }
 
+.content .contact a:hover {
+  color: black;
+}
+
 * {
   font-family: 'Ovo', serif; 
 }
