@@ -1,93 +1,91 @@
-* {
-	background-color: #C7AFBC;
-	color: #091B21;
-	font-family: 'Ovo', serif; 
+/*body*/
 
+body {
+  background-color: ivory;
 }
 
-title {
-	display: none;
+.content {
+  margin-top: 6em;
+}
+
+.content li {
+  font-size: 1.5em;
+}
+
+.content .contact {
+  margin-top: 3.5em;
+  font-size: 5.2em;
+  text-align: center;
+}
+
+.content .contact a:hover {
+  color: black;
+}
+
+* {
+  font-family: 'Ovo', serif; 
+}
+
+.extra_space {
+  height: 3em;
+}
+
+.code {
+  font-family: monospace;
+  margin-left: 1em;
+  margin-right: 1em;
+  background-color: #965882;
+}
+
+/*header*/
+.container .header {
+  background-color: Gainesboro;
+  border-color: grey;
+  font-size: 1.5em;
 }
 
 #name {
-	font-size: 1.5em;
-	
+  font-size: 1.7em;
 }
 
-
-.nav_bar {
-	border: .25em solid #1E6882;
-	background-color: #1E6882;
-	height: 1.5em;
-	width: 100%;
-	display: block;
-	margin-left: -.5em;
-	margin-right: -.5em;
-	text-align: center;
-	top: 0em;
-	position: fixed;
-	font-size: 2em;
-
+.navbar-default .header .navbar-nav li a:hover {
+  color: black;
+  background-color: LightGray;
 }
 
-
-a {
-	text-decoration: none;
+.container .header li a:visited {
+  color: black;
 }
 
-#Contact_Info a:link {
-	background-color: #1E6882;
-	color: #C7AFBC;
-	text-decoration: none;
+.container .header li a:link {
+  color: black;
 }
 
-
-
-#Contact_Info a:visited {
-	background-color: #1E6882;
-	color: #C7AFBC;
-	text-decoration: none;
+/*footer*/
+.container .footer {
+    font-size: 1.7em;
+    background-color: ivory;
+    border-color: ivory;
 }
 
-#Contact_Info a:hover {
-	background-color: #965882;
-	color: #091B21;
-	text-decoration: none;
+.navbar-default .footer .navbar-nav li a:hover {
+  color: black;
 }
 
-
-
-
-.nav_bar a:link {
-	background-color: #1E6882;
-	color: #C7AFBC;
-	text-decoration: none;
+.container .footer li a:visited {
+  color: #337ab7;
 }
 
-.nav_bar a:visited {
-	background-color: #1E6882;
-	color: #C7AFBC;
-	text-decoration: none;
+.container .footer li a:link {
+  color: #337ab7;
 }
 
-.nav_bar a:hover {
-	background-color: #965882;
-	color: #091B21;
-	text-decoration: none;
+/*center header and footer*/ 
+.navbar-nav{
+  float:none;
+  margin: 0 auto;
+  display: table;
+  table-layout: fixed;
 }
 
-
-#Contact_Info {
-	border-top: .25em solid #1E6882
-	bottom: 0;
-	position: fixed;
-	width: 110%;
-	background-color: #1E6882;
-	margin-left: -.5em;
-	margin-right: -.5em;
-}
-
-.newline {
-	display: block;
-}
 
