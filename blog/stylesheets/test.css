@@ -1,8 +1,8 @@
 /*header*/
 .container .header {
-    background-color: Gainesboro;
-    border-color: grey;
-    font-size: 1.5em;
+  background-color: Gainesboro;
+  border-color: grey;
+  font-size: 1.5em;
 }
 
 #name {
@@ -22,7 +22,6 @@
   color: black;
 }
 
-
 /*footer*/
 .container .footer {
     font-size: 1.7em;
@@ -41,11 +40,6 @@
 .container .footer li a:link {
   color: #337ab7;
 }
-
-
-
-
-
 
 /*center header and footer*/ 
 .navbar-nav{
