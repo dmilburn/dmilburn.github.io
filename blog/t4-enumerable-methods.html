@@ -40,20 +40,20 @@
         <p class = "code">food.cycle(2){|bite| puts bite}</p>
         <p>which would result in:</p>
         <pre><p class = "code">pasta
-    pizza
-    cheese
-    pasta
-    pizza
-    cheese</p></pre>
+pizza
+cheese
+pasta
+pizza
+cheese</p></pre>
         <p>Say we wanted to print each of these words twice in each line. We would write:<p>
         <p class = "code">food.cycle(2){|bite| puts bite*2}</p>
         <p>which would result in:</p>
         <pre><p class = "code">pastapasta
-    pizzapizza
-    cheesecheese
-    pastapasta
-    pizzapizza
-    cheesecheese</p></pre>
+pizzapizza
+cheesecheese
+pastapasta
+pizzapizza
+cheesecheese</p></pre>
         <p>Notice that the fourth line is "pizzapizza", not "pizzapizzapizzapizza". This method is non-destructive; the changes made to the items are not made to the original collection. The items from the original collection are cycled through each time. If this method were destructive, we would have in the fourth line "pizzapizza"*2 or "pizzapizzapizzapizza".</p>
         <h3>(Notes)</h3>
         <p>Here are some things to keep in mind about n:
