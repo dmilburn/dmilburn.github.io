@@ -30,6 +30,13 @@ body {
   height: 3em;
 }
 
+.code {
+  font-family: monospace;
+  margin-left: 1em;
+  margin-right: 1em;
+  background-color: #965882;
+}
+
 /*header*/
 .container .header {
   background-color: Gainesboro;
