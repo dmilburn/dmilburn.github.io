@@ -26,6 +26,10 @@ body {
   font-family: 'Ovo', serif; 
 }
 
+.extra_space {
+  height: 3em;
+}
+
 /*header*/
 .container .header {
   background-color: Gainesboro;
