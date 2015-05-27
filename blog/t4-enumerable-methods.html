@@ -1,69 +1,89 @@
 <!DOCTYPE html>
-<head>
-  <title>Cycle</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../blog/stylesheets/blog-stylesheet.css"/>
-  <link href='http://fonts.googleapis.com/css?family=Ovo' rel='stylesheet' type='text/css'>
+<html>
 
-</head>
+  <head>
+    <meta charset="UTF-8">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="../stylesheets/default.css" rel="stylesheet" type="text/css"  />
+   <title>Debbie Milburn</title>
+    <link href='http://fonts.googleapis.com/css?family=Ovo' rel='stylesheet' type='text/css'>
+  </head>
 
-<body>
+  <body>
+    <div class = "container">
 
-  <div class = "nav_bar" id = "sites"> <a href  = "http://dmilburn.github.io/projects/index.html"> Projects</a>  |  <a href = "http://dmilburn.github.io/about.html"> About</a>  |  <a href = "http://dmilburn.github.io/index.html" id = "name" >Debbie Milburn</a>  |  <a href  = "mailto:DebbieMilburn2@gmail.com">Contact</a>  |  <a href = "http://dmilburn.github.io/blog/index.html"> Blog</a></div>
-  <div id = "wordblock">
-  <div class = "extra_space"></div>
+      <nav class="navbar navbar-default navbar-fixed-top header">
+        <div class="container header">
+          <ul class="nav navbar-nav">
+            <li><a href = "http://dmilburn.github.io/index.html" id = "name" >Debbie Milburn</a></li>
+            <li><a href  = "http://dmilburn.github.io/projects/index.html"> Projects</a></li>
+            <li><a href = "http://dmilburn.github.io/about.html"> About</a> </li>
+            <li><a href  = "mailto:DebbieMilburn2@gmail.com">Contact</a></li>
+            <li><a href = "http://dmilburn.github.io/blog/index.html"> Blog</a></li>
+          </ul>
+        </div>
+      </nav>
 
-  <h1>Cycle</h1>
-  <h2>An enumerable method</h2>
-  <h4>2/3/15</h4>
+      <div class="content">
+         <h1>Cycle</h1>
+      <h2>An enumerable method</h2>
+      <h4>2/3/15</h4>
 
-  <section>
-    <p>The enumerable module contains many methods that can be applied to collections, i.e. arrays and hashes. One of these methods is called cycle. The syntax for cycle is:</p>
-    <p class = "code">collection.cycle(n){|loc_var| block}</p>
-    <p>When you call cycle on a collection, the collection is cycled through n number of times. Whatever is in the block is applied to each item of the list as its cycled through. </p>
-    <h3>Examples</h3>
-    <p>I'm pretty hungry, so let's create an array called "food" and fill it with different kinds of food:</p>
-    <p class = "code">food = ["pasta", "pizza", "cheese"]</p>
-    <p>If we wanted to print this list twice, we would write:</p>
-    <p class = "code">food.cycle(2){|bite| puts bite}</p>
-    <p>which would result in:</p>
-    <pre><p class = "code">pasta
+        <p>The enumerable module contains many methods that can be applied to collections, i.e. arrays and hashes. One of these methods is called cycle. The syntax for cycle is:</p>
+        <p class = "code">collection.cycle(n){|loc_var| block}</p>
+        <p>When you call cycle on a collection, the collection is cycled through n number of times. Whatever is in the block is applied to each item of the list as its cycled through. </p>
+        <h3>Examples</h3>
+        <p>I'm pretty hungry, so let's create an array called "food" and fill it with different kinds of food:</p>
+        <p class = "code">food = ["pasta", "pizza", "cheese"]</p>
+        <p>If we wanted to print this list twice, we would write:</p>
+        <p class = "code">food.cycle(2){|bite| puts bite}</p>
+        <p>which would result in:</p>
+        <pre><p class = "code">pasta
 pizza
 cheese
 pasta
 pizza
 cheese</p></pre>
-    <p>Say we wanted to print each of these words twice in each line. We would write:<p>
-    <p class = "code">food.cycle(2){|bite| puts bite*2}</p>
-    <p>which would result in:</p>
-    <pre><p class = "code">pastapasta
+        <p>Say we wanted to print each of these words twice in each line. We would write:<p>
+        <p class = "code">food.cycle(2){|bite| puts bite*2}</p>
+        <p>which would result in:</p>
+        <pre><p class = "code">pastapasta
 pizzapizza
 cheesecheese
 pastapasta
 pizzapizza
 cheesecheese</p></pre>
-    <p>Notice that the fourth line is "pizzapizza", not "pizzapizzapizzapizza". This method is non-destructive; the changes made to the items are not made to the original collection. The items from the original collection are cycled through each time. If this method were destructive, we would have in the fourth line "pizzapizza"*2 or "pizzapizzapizzapizza".</p>
-    <h3>(Notes)</h3>
-    <p>Here are some things to keep in mind about n:
-    <ul>
-      <li>If the integer entered is 0 or a negative number, nothing happens.</li> 
-      <li>If a float is entered, the float will be rounded down to the nearest integer and the collection will be cycled through that amount of times.</li>
-      <li>If nothing is entered, the collection will be cycled through infinitely.</li> </p>
-    </ul>
-    <h3>Additional Resources</h3>
-    <ul>
-      <li><a href "http://apidock.com/ruby/Enumerable/cycle">API Dock on Cycles</a></li>
-      <li><a href "http://www.sitepoint.com/guide-ruby-collections-iii-enumerable-enumerator/">Robert Qualls on Enumerables</a></li>
-    </ul>
+        <p>Notice that the fourth line is "pizzapizza", not "pizzapizzapizzapizza". This method is non-destructive; the changes made to the items are not made to the original collection. The items from the original collection are cycled through each time. If this method were destructive, we would have in the fourth line "pizzapizza"*2 or "pizzapizzapizzapizza".</p>
+        <h3>(Notes)</h3>
+        <p>Here are some things to keep in mind about n:
+        <ul>
+          <li>If the integer entered is 0 or a negative number, nothing happens.</li> 
+          <li>If a float is entered, the float will be rounded down to the nearest integer and the collection will be cycled through that amount of times.</li>
+          <li>If nothing is entered, the collection will be cycled through infinitely.</li> </p>
+        </ul>
+        <h3>Additional Resources</h3>
+        <ul>
+          <li><a href "http://apidock.com/ruby/Enumerable/cycle">API Dock on Cycles</a></li>
+          <li><a href "http://www.sitepoint.com/guide-ruby-collections-iii-enumerable-enumerator/">Robert Qualls on Enumerables</a></li>
+        </ul>
 
-    <div class = "extra_space"></div>
+        <div class = "extra_space"></div>
+        <div class = "extra_space"></div>
+
+      </div>
+
+      <nav class="navbar navbar-default navbar-fixed-bottom footer">
+        <div class="container footer">
+          <ul class="nav navbar-nav">
+            <li><a href = "https://www.linkedin.com/pub/debbie-milburn/9a/580/242"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
+            <li><a href = "mailto:DebbieMilburn2@gmail.com"> <i class="fa fa-envelope-square fa-lg"></i></a> </li>
+            <li><a href = "https://github.com/dmilburn"><i class="fa fa-github-square fa-lg"></i></a></li>
+            <li> <a href = "https://twitter.com/DebbieMilburn2"> <i class="fa fa-twitter-square fa-lg"></i></a></li>
+          </ul>
+        </div>
+      </nav>
+
     </div>
-    <div id="footer"> <a href = "https://www.linkedin.com/pub/debbie-milburn/9a/580/242"><img src="../blog/img/linkedinlogo.png" alt="linkedin logo" style="width:50px;height:50px"></a><a href = "mailto:DebbieMilburn2@gmail.com"> <img src="../blog/img/emaillogo.png" alt="gmail logo" style="width:3-px;height:50px"></a>  
-    <a href = "https://github.com/dmilburn"><img src="../blog/img/githublogo.png" alt="githublogo" style="width:50px;height:50px"></a>
-    <a href = "https://twitter.com/DebbieMilburn2"> <img src="../blog/img/twitterlogo.png" alt="twitter logo" style="width:50px;height:50px"></a></div>
-
-
-  </section>
-  
-</body>
-
+  </body>
+</html>

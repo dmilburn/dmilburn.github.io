@@ -1,78 +1,98 @@
 <!DOCTYPE html>
-<head>
-  <title>Ruby Classes</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../blog/stylesheets/blog-stylesheet.css"/>
-  <link href='http://fonts.googleapis.com/css?family=Ovo' rel='stylesheet' type='text/css'>
+<html>
 
-</head>
+  <head>
+    <meta charset="UTF-8">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="../stylesheets/default.css" rel="stylesheet" type="text/css"  />
+   <title>Debbie Milburn</title>
+    <link href='http://fonts.googleapis.com/css?family=Ovo' rel='stylesheet' type='text/css'>
+  </head>
 
-<body>
+  <body>
+    <div class = "container">
 
-  <div class = "nav_bar" id = "sites"> <a href  = "http://dmilburn.github.io/projects/index.html"> Projects</a>  |  <a href = "http://dmilburn.github.io/about.html"> About</a>  |  <a href = "http://dmilburn.github.io/index.html" id = "name" >Debbie Milburn</a>  |  <a href  = "mailto:DebbieMilburn2@gmail.com">Contact</a>  |  <a href = "http://dmilburn.github.io/blog/index.html"> Blog</a></div>
-  <div id = "wordblock">
-  <div class = "extra_space"></div>
+      <nav class="navbar navbar-default navbar-fixed-top header">
+        <div class="container header">
+          <ul class="nav navbar-nav">
+            <li><a href = "http://dmilburn.github.io/index.html" id = "name" >Debbie Milburn</a></li>
+            <li><a href  = "http://dmilburn.github.io/projects/index.html"> Projects</a></li>
+            <li><a href = "http://dmilburn.github.io/about.html"> About</a> </li>
+            <li><a href  = "mailto:DebbieMilburn2@gmail.com">Contact</a></li>
+            <li><a href = "http://dmilburn.github.io/blog/index.html"> Blog</a></li>
+          </ul>
+        </div>
+      </nav>
 
-  <h1> Ruby Classes </h1>
-  <h2> </h2>
-  <h4> 2/13/15</h4>
+      <div class="content">
+        <h1> Ruby Classes </h1>
+      <h2> </h2>
+      <h4> 2/13/15</h4>
 
-  <section>
-    <p>Humans love to classify things. We like to be able to point to a whole bunch of different stuff that has some things in common and call it by one word. Take dogs for example. <a href = "https://www.akc.org/dog-breeds/groups/all/">There are many breeds of dogs in the world.</a> These breeds have many differences such as temperament, color, and size. However, because these breeds have certain attributes in common, such as four legs, wet noses and being adorable, there is a word in English to classify them all: “dog”.</p>
-    <p>Humans also love to classify things in computer programming. This is where “class” in Ruby comes in. Creating a class in Ruby is an easy solution for creating several objects with similar attributes.</p>
-    <p>For example, let’s create a Dog class in Ruby:</p>
-    <pre><p class = "code">class Dog
-end</p></pre>
+        <p>Humans love to classify things. We like to be able to point to a whole bunch of different stuff that has some things in common and call it by one word. Take dogs for example. <a href = "https://www.akc.org/dog-breeds/groups/all/">There are many breeds of dogs in the world.</a> These breeds have many differences such as temperament, color, and size. However, because these breeds have certain attributes in common, such as four legs, wet noses and being adorable, there is a word in English to classify them all: “dog”.</p>
+        <p>Humans also love to classify things in computer programming. This is where “class” in Ruby comes in. Creating a class in Ruby is an easy solution for creating several objects with similar attributes.</p>
+        <p>For example, let’s create a Dog class in Ruby:</p>
+        <pre><p class = "code">class Dog
+    end</p></pre>
 
-    <p>Now that we’ve created a Dog class, we can create a new Dog like so:</p>
-    <p class = "code">shih_tzu = Dog.new</p>
-    <p>To set inherent values to our Dog as soon as we’ve created it, we must enter values into the “initiate” method in our Dog class.  These attributes will be assigned to all objects who are in class Dog. So let's make all of our dogs have 4 legs, wet noses and adorable like so:</p>
-    <pre><p class = "code">class Dog
-    def initiate
-        legs = 4
-        nose = “wet”
-        adorable? = true
-    end
-end</p></pre>
-    <p>Now anytime we create a new dog, they will automatically have the attributes mentioned above.</p>
-    <p>But what about things that we want all dogs to have but need to be a little different? Like their names? One of the ways to solve this is to create a "name" variable and set it as an argument when we're defining initiate: </p>
-    <pre><p class = "code">class Dog
-    def initiate(name)
-        legs = 4
-        nose = “wet”
-        adorable? = true
-    end
-end</p></pre>
-    <p>We can now enter a name as an argument when we create a new dog object:</p>
-    <p class = "code">dalmatian = Dog.new(“Stephen”)</p>
-    <p>And we now have a dalmatian named Stephen. We’re living the dream.</p>
-    <p>On top of the attributes we assign to things in a class, we also can think of classes in terms of what we do to them. There are things that we can do to dogs like walk them, praise them, and <a href = "http://store.americanapparel.net/lemon-lime-dragon-dogzilla-xxs-m-_f900ll">dress them up like dragons.</a> This is where methods come in.  Methods inside of class definitions are the things we can do to our objects and/or dogs.</p>
-    <p>Let’s make a praise method for our class that says “Good boy” and then the name of our dog. In order to use the name we entered earlier, we’ll need to make the name available to our whole class by making it into an “instance variable”. Instance variables start with an @ symbol and are available for use within the whole class, not just within the current method.</p>
-    <pre><p class = "code">class Dog
-    def initiate(name)
-        @name = name
-        legs = 4
-        nose = “wet”
-        adorable? = true
-    end
-    def praise
-        puts “Good boy, #{@name}!”
-    end
-end</p></pre>
-    <p>We can call our praise method on our dog Stephen by entering:</p>
-    <p class = "code">dalmatian.praise</p>
-    <p>which would result in:</p>
-    <p class = "code">Good boy, Stephen!</p>
-    <p>Thank you for reading this post! I hope it helped to clear up some things on classes.</p>
+        <p>Now that we’ve created a Dog class, we can create a new Dog like so:</p>
+        <p class = "code">shih_tzu = Dog.new</p>
+        <p>To set inherent values to our Dog as soon as we’ve created it, we must enter values into the “initiate” method in our Dog class.  These attributes will be assigned to all objects who are in class Dog. So let's make all of our dogs have 4 legs, wet noses and adorable like so:</p>
+        <pre><p class = "code">class Dog
+        def initiate
+            legs = 4
+            nose = “wet”
+            adorable? = true
+        end
+    end</p></pre>
+        <p>Now anytime we create a new dog, they will automatically have the attributes mentioned above.</p>
+        <p>But what about things that we want all dogs to have but need to be a little different? Like their names? One of the ways to solve this is to create a "name" variable and set it as an argument when we're defining initiate: </p>
+        <pre><p class = "code">class Dog
+        def initiate(name)
+            legs = 4
+            nose = “wet”
+            adorable? = true
+        end
+    end</p></pre>
+        <p>We can now enter a name as an argument when we create a new dog object:</p>
+        <p class = "code">dalmatian = Dog.new(“Stephen”)</p>
+        <p>And we now have a dalmatian named Stephen. We’re living the dream.</p>
+        <p>On top of the attributes we assign to things in a class, we also can think of classes in terms of what we do to them. There are things that we can do to dogs like walk them, praise them, and <a href = "http://store.americanapparel.net/lemon-lime-dragon-dogzilla-xxs-m-_f900ll">dress them up like dragons.</a> This is where methods come in.  Methods inside of class definitions are the things we can do to our objects and/or dogs.</p>
+        <p>Let’s make a praise method for our class that says “Good boy” and then the name of our dog. In order to use the name we entered earlier, we’ll need to make the name available to our whole class by making it into an “instance variable”. Instance variables start with an @ symbol and are available for use within the whole class, not just within the current method.</p>
+        <pre><p class = "code">class Dog
+        def initiate(name)
+            @name = name
+            legs = 4
+            nose = “wet”
+            adorable? = true
+        end
+        def praise
+            puts “Good boy, #{@name}!”
+        end
+    end</p></pre>
+        <p>We can call our praise method on our dog Stephen by entering:</p>
+        <p class = "code">dalmatian.praise</p>
+        <p>which would result in:</p>
+        <p class = "code">Good boy, Stephen!</p>
+        <p>Thank you for reading this post! I hope it helped to clear up some things on classes.</p>
 
-    <div class = "extra_space"></div>
+        <div class = "extra_space"></div>
+        <div class = "extra_space"></div>
+
+      </div>
+
+      <nav class="navbar navbar-default navbar-fixed-bottom footer">
+        <div class="container footer">
+          <ul class="nav navbar-nav">
+            <li><a href = "https://www.linkedin.com/pub/debbie-milburn/9a/580/242"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
+            <li><a href = "mailto:DebbieMilburn2@gmail.com"> <i class="fa fa-envelope-square fa-lg"></i></a> </li>
+            <li><a href = "https://github.com/dmilburn"><i class="fa fa-github-square fa-lg"></i></a></li>
+            <li> <a href = "https://twitter.com/DebbieMilburn2"> <i class="fa fa-twitter-square fa-lg"></i></a></li>
+          </ul>
+        </div>
+      </nav>
+
     </div>
-    <div id="footer"> <a href = "https://www.linkedin.com/pub/debbie-milburn/9a/580/242"><img src="../blog/img/linkedinlogo.png" alt="linkedin logo" style="width:50px;height:50px"></a><a href = "mailto:DebbieMilburn2@gmail.com"> <img src="../blog/img/emaillogo.png" alt="gmail logo" style="width:3-px;height:50px"></a>  
-    <a href = "https://github.com/dmilburn"><img src="../blog/img/githublogo.png" alt="githublogo" style="width:50px;height:50px"></a>
-    <a href = "https://twitter.com/DebbieMilburn2"> <img src="../blog/img/twitterlogo.png" alt="twitter logo" style="width:50px;height:50px"></a></div>
-
-
-  </section>
-  
-</body>
-
+  </body>
+</html>
