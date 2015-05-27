@@ -1,58 +1,83 @@
 <!DOCTYPE html>
-<head>
-  <title>Inline, Block and Inline-Block</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../blog/stylesheets/blog-stylesheet.css"/>
-  <link href='http://fonts.googleapis.com/css?family=Ovo' rel='stylesheet' type='text/css'>
-</head>
-    
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="../blog/stylesheets/test.css" rel="stylesheet" type="text/css"  />
+   <title>Debbie Milburn</title>
+    <link href='http://fonts.googleapis.com/css?family=Ovo' rel='stylesheet' type='text/css'>
+  </head>
+
   <body>
-    <div class = "nav_bar" id = "sites"> <a href  = "http://dmilburn.github.io/projects/index.html"> Projects</a>  |  <a href = "http://dmilburn.github.io/about.html"> About</a>  |  <a href = "http://dmilburn.github.io/index.html" id = "name" >Debbie Milburn</a>  |  <a href  = "mailto:DebbieMilburn2@gmail.com">Contact</a>  |  <a href = "http://dmilburn.github.io/blog/index.html"> Blog</a></div>
-  <div id = "wordblock">
-  <div class = "extra_space"></div>
-  <h1> What does it mean to change an object's display to "block", “inline” and “inline-block”? </h1>
-  <h2>Condiments are delicious</h2>
-  <h4>1/21/2015</h4>
+    <div class = "container">
 
-  <section>
-    <p> In CSS formatting, changing the display element changes how an object is displayed on the screen. Here is the correct CSS syntax for using display: </p>
-    <pre><p class = "code">.example {
-      display: value;
-    }</p></pre>
-    <p>Today I will explain the differences between block, inline  and inline-block display values.</p>
+      <nav class="navbar navbar-default navbar-fixed-top header">
+        <div class="container header">
+          <ul class="nav navbar-nav">
+            <li><a href = "http://dmilburn.github.io/index.html" id = "name" >Debbie Milburn</a></li>
+            <li><a href  = "http://dmilburn.github.io/projects/index.html"> Projects</a></li>
+            <li><a href = "http://dmilburn.github.io/about.html"> About</a> </li>
+            <li><a href  = "mailto:DebbieMilburn2@gmail.com">Contact</a></li>
+            <li><a href = "http://dmilburn.github.io/blog/index.html"> Blog</a></li>
+          </ul>
+        </div>
+      </nav>
 
-    <h3>Block Objects</h3>
-    <p>The "physical" measurements of block objects are changeable. In the example below, there are 3 block value elements: Mustard, Ketchup and Relish. These 3 elements are all different sizes; they all have different height and  width values. </p>
+      <div class="content">
+        <h1> What does it mean to change an object's display to "block", “inline” and “inline-block”? </h1>
+        <h2>Condiments are delicious</h2>
+        <h4>1/21/2015</h4>
 
-    <p>The location of block objects is also changeable. By default, block objects stack themselves in a verticle line, like Mustard and Ketchup in the example below. Relish has been moved down and to the right using margin-top and margin-left.</p>
+          <p> In CSS formatting, changing the display element changes how an object is displayed on the screen. Here is the correct CSS syntax for using display: </p>
+          <pre><p class = "code">.example {
+            display: value;
+          }</p></pre>
+          <p>Today I will explain the differences between block, inline  and inline-block display values.</p>
 
-    <img class = "blogpic" src="../blog/img/block.png" style="width:75%;height:75%">
-   
-    <h3>Inline Objects</h3>
-    <p> Inline objectsare displayed in a horizontal line. Inline objects do not have physical properties in the same way that block objects do. An inline object cannot have a defined height or width; it will become just big enough to hold its contents. In terms of location, inline objects cannot be moved vertically, only horizontally. In the below example, all of the code is exactly the same as the first example, except that the display value has been changed to inline. Without changing anything else, the condiments have all become a smaller size and moved into a horizontal line. </p>
-    <img class = "blogpic" src="../blog/img/inline.png" style="width:75%;height:75%">
+          <h3>Block Objects</h3>
+          <p>The "physical" measurements of block objects are changeable. In the example below, there are 3 block value elements: Mustard, Ketchup and Relish. These 3 elements are all different sizes; they all have different height and  width values. </p>
 
-    <h3>Inline-Block Objects</h3>
-    <p>Inline-Block objects have similarities to both inline objects and block objects. In the example below, I have again only changed the display value to inline-block. Like blocks, inline-blocks can also have "physical" attributes; you can set the height and width. Notice in the example below that the three condiments are different sizes.</p>
-    <p> Like inline objects, inline-block objects are in a horizontal line. Also similarly to inline objects, you can move objects horizontally but there are limitation on the vertical movement. Notice in the example below that the three condiments are in a horizontal line, starting from vertical position of Mustard.</p>
+          <p>The location of block objects is also changeable. By default, block objects stack themselves in a verticle line, like Mustard and Ketchup in the example below. Relish has been moved down and to the right using margin-top and margin-left.</p>
 
-    <img class = "blogpic" src="../blog/img/inline-block.png" style="width:75%;height:75%">
+          <img class = "blogpic" src="../blog/img/block.png" style="width:75%;height:75%">
+         
+          <h3>Inline Objects</h3>
+          <p> Inline objectsare displayed in a horizontal line. Inline objects do not have physical properties in the same way that block objects do. An inline object cannot have a defined height or width; it will become just big enough to hold its contents. In terms of location, inline objects cannot be moved vertically, only horizontally. In the below example, all of the code is exactly the same as the first example, except that the display value has been changed to inline. Without changing anything else, the condiments have all become a smaller size and moved into a horizontal line. </p>
+          <img class = "blogpic" src="../blog/img/inline.png" style="width:75%;height:75%">
 
-    <h3>Additional Helpful Resources</h3>
-    <ul>
-      <li> <a href = "http://www.w3schools.com/cssref/pr_class_display.asp" > W3School CSS display </a> </li>
-      <li> <a href = "http://designshack.net/articles/css/whats-the-deal-with-display-inline-block/" > What’s the Deal With Display: Inline-Block? by Joshua Johnson </a> </li>
-      <li> <a href = "http://www.amazon.com/HTML-CSS-Design-Build-Websites/dp/1118008189" > HTML & CSS by Jon Duckett </a> </li>
-    </ul>
+          <h3>Inline-Block Objects</h3>
+          <p>Inline-Block objects have similarities to both inline objects and block objects. In the example below, I have again only changed the display value to inline-block. Like blocks, inline-blocks can also have "physical" attributes; you can set the height and width. Notice in the example below that the three condiments are different sizes.</p>
+          <p> Like inline objects, inline-block objects are in a horizontal line. Also similarly to inline objects, you can move objects horizontally but there are limitation on the vertical movement. Notice in the example below that the three condiments are in a horizontal line, starting from vertical position of Mustard.</p>
 
-<div class = "extra_space"></div>
+          <img class = "blogpic" src="../blog/img/inline-block.png" style="width:75%;height:75%">
+
+          <h3>Additional Helpful Resources</h3>
+          <ul>
+            <li> <a href = "http://www.w3schools.com/cssref/pr_class_display.asp" > W3School CSS display </a> </li>
+            <li> <a href = "http://designshack.net/articles/css/whats-the-deal-with-display-inline-block/" > What’s the Deal With Display: Inline-Block? by Joshua Johnson </a> </li>
+            <li> <a href = "http://www.amazon.com/HTML-CSS-Design-Build-Websites/dp/1118008189" > HTML & CSS by Jon Duckett </a> </li>
+          </ul>
+
+          <div class = "extra_space"></div>
+          <div class = "extra_space"></div>
+
+      </div>
+
+      <nav class="navbar navbar-default navbar-fixed-bottom footer">
+        <div class="container footer">
+          <ul class="nav navbar-nav">
+            <li><a href = "https://www.linkedin.com/pub/debbie-milburn/9a/580/242"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
+            <li><a href = "mailto:DebbieMilburn2@gmail.com"> <i class="fa fa-envelope-square fa-lg"></i></a> </li>
+            <li><a href = "https://github.com/dmilburn"><i class="fa fa-github-square fa-lg"></i></a></li>
+            <li> <a href = "https://twitter.com/DebbieMilburn2"> <i class="fa fa-twitter-square fa-lg"></i></a></li>
+          </ul>
+        </div>
+      </nav>
+
     </div>
-    <div id="footer"> <a href = "https://www.linkedin.com/pub/debbie-milburn/9a/580/242"><img src="../blog/img/linkedinlogo.png" alt="linkedin logo" style="width:50px;height:50px"></a><a href = "mailto:DebbieMilburn2@gmail.com"> <img src="../blog/img/emaillogo.png" alt="gmail logo" style="width:3-px;height:50px"></a>  
-    <a href = "https://github.com/dmilburn"><img src="../blog/img/githublogo.png" alt="githublogo" style="width:50px;height:50px"></a>
-    <a href = "https://twitter.com/DebbieMilburn2"> <img src="../blog/img/twitterlogo.png" alt="twitter logo" style="width:50px;height:50px"></a></div>
+  </body>
+</html>
 
-
-
-  </section>
-</body>
 
