@@ -9,6 +9,14 @@ body {
   padding-bottom: 4em;
 }
 
+.content .page_title {
+  text-align: center;
+}
+
+.content .date {
+  text-align: center;
+}
+
 .content li {
   font-size: 1.5em;
 }
