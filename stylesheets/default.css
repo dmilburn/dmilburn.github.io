@@ -72,9 +72,9 @@ body {
 
 /*footer*/
 .container .footer {
-    font-size: 1.7em;
-    background-color: ivory;
-    border-color: ivory;
+  font-size: 1.7em;
+  background-color: ivory;
+  border-color: ivory;
 }
 
 .navbar-default .footer .navbar-nav li a:hover {
@@ -96,5 +96,3 @@ body {
   display: table;
   table-layout: fixed;
 }
-
-
