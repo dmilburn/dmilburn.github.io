@@ -3,10 +3,10 @@
 
   <head>
     <meta charset="UTF-8">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link href="../stylesheets/default.css" rel="stylesheet" type="text/css"  />
-   <title>Debbie Milburn</title>
+    <title>Debbie Milburn</title>
     <link href='http://fonts.googleapis.com/css?family=Ovo' rel='stylesheet' type='text/css'>
   </head>
 
@@ -26,60 +26,57 @@
       </nav>
 
       <div class="content">
-          <h1>Hashes and Arrays</h1>
-          <h2></h2>
-          <h4>1/29/15</h4>
+      <h1 class = "page_title">Hashes and Arrays</h1>
+      <h2></h2>
+      <h4 class = "date">1/29/15</h4>
 
-            <p>In the programming language Ruby, Arrays and Hashes are used to store information. The main way that these two organizational tools differ is in how they let us retrieve information. When choosing whether or not to use an Array or a Hash in your code, it is important to consider how you want to retrieve your information.</p>
+        <p>In the programming language Ruby, Arrays and Hashes are used to store information. The main way that these two organizational tools differ is in how they let us retrieve information. When choosing whether or not to use an Array or a Hash in your code, it is important to consider how you want to retrieve your information.</p>
 
-            <h3>Arrays</h3>
-            <p>Arrays are organizational systems that are helpful for when you want your information to be retrievable based a numbered list. The syntax for writing an array is:</p>
-            <p class = "code">array = [“item0”, “item1”, “item2”, “item3”]</p>
-            <p>I am the youngest of four sisters. A standard thing that happens when people get to know me is they learn the names of my older sisters. Factoring in our bith order, the names of me and my sisters is information stored well in an array.</p>
-            <p>Here's an array with the names of me and my sisters stored in birth order:</p>
-            <p class = "code">milburn_sisters = [“Rebecca”, “Eleanor”, “Sarah”, “Debbie”]</p>
-            <p>In order to access information in an array, you type:</p>
-              <p class = "code">array_name[#]</p>
-            <p>with the corresponding number of the data you want where "#" is. An important thing to remember when accessing arrays is that the first piece of data stored is data number 0, NOT data number 1. So, if you wanted to find out the name of my oldest sister, you would type:</p>
-            <p class = "code">puts milburn_sisters[0]</p>
-            <p>which would result in:</p>
-            <p class = "code">Rebecca</p>
-
-
-            <h3>Hashes</h3>
-            <p>Hashes are organizational systems that are helpful for when you don't need your information stored in a specific order. The syntax for writing a hash is:</p>
-            <pre><p class = "code">hash = {
-              “key1” => “value1”,
-              “key2” => “value2”,
-              “key3” => “value3”,
-              “key4” => “value4”
-        }</p></pre>
-            <p>A dictionary is an example of an organizational system that does not require your information to be retrieved in a specific order. (I know dictionaries are usually in alphabetical order, but hear me out.) If you were to look up "<a href = "https://www.youtube.com/watch?v=DOcyzddfvvM">Aardvark</a>" in the dictionary, likely the only thing that would be important to you is the <a href = "http://dictionary.reference.com/browse/aardvark">definition</a>, NOT that Aardvark is the first word in the dictionary.</p>
-            <p>Hashes are usesful for this reason; they allow you to access information by their keywords, instead of by their place in a line.</p>
-            <p>Here's a hash dictionary involving the computer programming vocab in this blog post:</p>
-            <pre><p class = "code">vocab = {
-              "hash" => "A data retrieval system, not ordered”,
-              "array" => "A data retrieval system, ordered",
-              "ruby" => "A programming language",
-        }</p></pre>
-            <p>In order to access information in a hash, you type:</p>
-            <p class = "code">hash_name["key"]</p>
-            <p>with the word before the => where "key" is. So, if you wanted to find out what ruby is, you would type:</p>
-            <p class = "code">puts vocab["ruby"]</p>
-            <p>which would result in:</p>
-            <p class = "code">A programming language</p>
+        <h3>Arrays</h3>
+        <p>Arrays are organizational systems that are helpful for when you want your information to be retrievable based a numbered list. The syntax for writing an array is:</p>
+        <p class = "code">array = [“item0”, “item1”, “item2”, “item3”]</p>
+        <p>I am the youngest of four sisters. A standard thing that happens when people get to know me is they learn the names of my older sisters. Factoring in our bith order, the names of me and my sisters is information stored well in an array.</p>
+        <p>Here's an array with the names of me and my sisters stored in birth order:</p>
+        <p class = "code">milburn_sisters = [“Rebecca”, “Eleanor”, “Sarah”, “Debbie”]</p>
+        <p>In order to access information in an array, you type:</p>
+          <p class = "code">array_name[#]</p>
+        <p>with the corresponding number of the data you want where "#" is. An important thing to remember when accessing arrays is that the first piece of data stored is data number 0, NOT data number 1. So, if you wanted to find out the name of my oldest sister, you would type:</p>
+        <p class = "code">puts milburn_sisters[0]</p>
+        <p>which would result in:</p>
+        <p class = "code">Rebecca</p>
 
 
-            <p>I hope this was helpful in understanding the differences between Hashes and Arrays and when to use them.</p>
+        <h3>Hashes</h3>
+        <p>Hashes are organizational systems that are helpful for when you don't need your information stored in a specific order. The syntax for writing a hash is:</p>
+        <pre><p class = "code">hash = {
+          “key1” => “value1”,
+          “key2” => “value2”,
+          “key3” => “value3”,
+          “key4” => “value4”
+    }</p></pre>
+        <p>A dictionary is an example of an organizational system that does not require your information to be retrieved in a specific order. (I know dictionaries are usually in alphabetical order, but hear me out.) If you were to look up "<a href = "https://www.youtube.com/watch?v=DOcyzddfvvM">Aardvark</a>" in the dictionary, likely the only thing that would be important to you is the <a href = "http://dictionary.reference.com/browse/aardvark">definition</a>, NOT that Aardvark is the first word in the dictionary.</p>
+        <p>Hashes are usesful for this reason; they allow you to access information by their keywords, instead of by their place in a line.</p>
+        <p>Here's a hash dictionary involving the computer programming vocab in this blog post:</p>
+        <pre><p class = "code">vocab = {
+          "hash" => "A data retrieval system, not ordered”,
+          "array" => "A data retrieval system, ordered",
+          "ruby" => "A programming language",
+    }</p></pre>
+        <p>In order to access information in a hash, you type:</p>
+        <p class = "code">hash_name["key"]</p>
+        <p>with the word before the => where "key" is. So, if you wanted to find out what ruby is, you would type:</p>
+        <p class = "code">puts vocab["ruby"]</p>
+        <p>which would result in:</p>
+        <p class = "code">A programming language</p>
 
-            
-            <h3>Additional Helpful Resources</h3>
-            <ul>
-              <li> <a href = "http://www.linuxtopia.org/online_books/programming_books/ruby_tutorial/Ruby.new_Arrays_and_Hashes.html" > Linuxtopia, Arrays and Hashes </a> </li>
-              <li> <a href = "http://www.codecademy.com/en/tracks/ruby" > Code Academy, Ruby</a> </li>
-              
-              
-            </ul>
+
+        <p>I hope this was helpful in understanding the differences between Hashes and Arrays and when to use them.</p>
+
+        <h3>Additional Helpful Resources</h3>
+        <ul>
+          <li> <a href = "http://www.linuxtopia.org/online_books/programming_books/ruby_tutorial/Ruby.new_Arrays_and_Hashes.html" > Linuxtopia, Arrays and Hashes </a> </li>
+          <li> <a href = "http://www.codecademy.com/en/tracks/ruby" > Code Academy, Ruby</a> </li>
+        </ul>
       </div>
 
       <nav class="navbar navbar-default navbar-fixed-bottom footer">
