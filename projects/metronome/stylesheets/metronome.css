@@ -1,0 +1,57 @@
+body {
+  background-color: #FFFEFC;
+}
+
+#title {
+  text-align: center;
+  margin-bottom: -.5em;
+}
+
+#subtitle {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+#metronome-parameters {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#metronome-counter {
+  height: 50px;
+  width: 50px;
+  font-size: 50px;
+  text-align: center;
+  border: 1px solid black ;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+
+#metronome-visual {
+  position: relative;
+  margin-top: 10px;
+  height: 400px;
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: black;
+  border: 1px solid black;
+}
+
+#metronome-stick {
+  position: relative;
+  margin-top: 50px;
+  height: 300px;
+  width: 5px;
+  background-color: pink;
+  margin-right: auto;
+  margin-left: auto;
+  transform: rotate(20deg);
+  transform-origin: 50% 100%;
+}
+
+#metronome-parameters input[type=text] {
+  font-size: .75em;
+  width: 2em;
+}
