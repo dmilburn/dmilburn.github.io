@@ -13,12 +13,13 @@ body {
 }
 
 #metronome-parameters {
+  margin-top: 2em;
   text-align: center;
   font-size: 1.5em;
 }
 
 #metronome-counter {
-  height: 50px;
+  height: 55px;
   width: 50px;
   font-size: 50px;
   text-align: center;
@@ -31,8 +32,8 @@ body {
 #metronome-visual {
   position: relative;
   margin-top: 10px;
-  height: 400px;
-  width: 200px;
+  height: 350px;
+  width: 175px;
   margin-right: auto;
   margin-left: auto;
   background-color: black;
@@ -42,7 +43,7 @@ body {
 #metronome-stick {
   position: relative;
   margin-top: 50px;
-  height: 300px;
+  height: 245px;
   width: 5px;
   background-color: pink;
   margin-right: auto;
@@ -54,4 +55,14 @@ body {
 #metronome-parameters input[type=text] {
   font-size: .75em;
   width: 2em;
+}
+
+#content {
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #EEEEEE;
+  border: 3px solid DarkCyan;
+  height: 38.5em;
+  width: 50%;
 }
