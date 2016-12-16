@@ -44,3 +44,8 @@
 .dm-big-nav-font {
   font-size: 2.1em;
 }
+
+#headshot {
+  height: 70%;
+  width: 70%;
+}
