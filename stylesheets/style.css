@@ -34,7 +34,7 @@ footer .icon-block {
 }
 
 .dm-black-text{
-  color: #140D10;
+  color: #140D10 !important;
 }
 
 .dm-purple {
@@ -44,6 +44,11 @@ footer .icon-block {
 .dm-hot-pink {
   background-color: #ee6e73 !important;
 }
+
+.dm-hot-pink-text {
+  color: #ee6e73;
+}
+
 
 .dm-big-nav-font {
   font-size: 2.1em;
@@ -55,5 +60,5 @@ footer .icon-block {
 }
 
 .contact-link i.fa:hover {
-  color: #4B7a76;
+  color: #140D10;
 }
