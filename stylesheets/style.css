@@ -1,7 +1,7 @@
 .icon-block {
   padding: 0 15px;
 }
-.icon-block .material-icons {
+footer .icon-block {
   font-size: inherit;
 }
 
@@ -23,6 +23,10 @@
 
 .dm-light-green {
   background-color: #28FFA2
+}
+
+.dm-light-green-text {
+  color: #28FFA2
 }
 
 .dm-black{
@@ -48,4 +52,8 @@
 #headshot {
   height: 70%;
   width: 70%;
+}
+
+.contact-link i.fa:hover {
+  color: #4B7a76;
 }
