@@ -4,3 +4,35 @@
 .icon-block .material-icons {
   font-size: inherit;
 }
+
+.dm-white {
+  background-color: #D1EBE8;
+}
+
+.dm-white-text {
+  color: #D1EBE8;
+}
+
+.dm-turquoise {
+  background-color: #4B7a76;
+}
+
+.dm-turquoise-text {
+  color: #4B7a76;
+}
+
+.dm-light-green {
+  background-color: #28FFA2
+}
+
+.dm-black{
+  background-color: #140D10;
+}
+
+.dm-black-text{
+  color: #140D10;
+}
+
+.dm-purple {
+  background-color: #755572;
+}
