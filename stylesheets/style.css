@@ -13,20 +13,20 @@ footer .icon-block {
   color: #ECEBEF;
 }
 
-.dm-turquoise {
-  background-color: #4B7a76;
+.dm-grey {
+  background-color: #49484A;
 }
 
-.dm-turquoise-text {
-  color: #4B7a76;
+.dm-grey-text {
+  color: #49484A;
 }
 
-.dm-light-green {
-  background-color: #28FFA2
+.dm-purple {
+  background-color: #454AB2
 }
 
-.dm-light-green-text {
-  color: #28FFA2
+.dm-purple-text {
+  color: #454AB2
 }
 
 .dm-black{
@@ -35,10 +35,6 @@ footer .icon-block {
 
 .dm-black-text{
   color: #140D10 !important;
-}
-
-.dm-purple {
-  background-color: #755572;
 }
 
 .dm-hot-pink {
